@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/healthbio_list_id"
+    android:name="sg.edu.nus.iss.ft08.medipal.personal.PersonListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutManager="LinearLayoutManager"
+    tools:context="sg.edu.nus.iss.ft08.medipal.personal.PersonListActivity"
+    tools:listitem="@layout/healthbio_list_content" />

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sg.edu.nus.iss.ft08.medipal">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_add_alert_blue_24dp"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_add_alert_blue_24dp"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HelpScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_welcome"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.ft08.medipal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".medication.MedicationDetailActivity"
+            android:label="@string/title_activity_medication_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.ft08.medipal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".measurement.MeasurementDetailActivity"
+            android:label="@string/title_activity_measurement_detail"
+            android:parentActivityName=".measurement.MeasurementDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.ft08.medipal.measurement.MeasurementDetailActivity" />
+        </activity>
+        <activity
+            android:name=".appointment.AppointmentDetailActivity"
+            android:label="@string/title_activity_appointment_detail"
+            android:parentActivityName=".appointment.AppointmentDetailActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.ft08.medipal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".personal.PersonListActivity"
+            android:label="@string/title_activity_personal_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.ft08.medipal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".personal.PersonalDetailActivity"
+            android:label="@string/title_activity_personal_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.ft08.medipal.personal.PersonListActivity" />
+        </activity>
+        <activity
+            android:name=".healthBio.HealthBioListActivity"
+            android:label="@string/title_activity_health_bio_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.ft08.medipal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".healthBio.HealthBioDetailActivity"
+            android:label="@string/title_activity_health_bio_detail"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.ft08.medipal.healthBio.HealthBioListActivity" />
+        </activity>
+        <activity
+            android:name=".category.CategoryListActivity"
+            android:label="@string/title_category_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.ft08.medipal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".category.CategoryDetailActivity"
+            android:label="@string/title_category_detail"
+            android:parentActivityName=".category.CategoryListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.ft08.medipal.category.CategoryListActivity" />
+        </activity>
+        <activity
+            android:name=".emergency.EmergencyContactListActivity"
+            android:label="@string/title_emergencycontact_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.ft08.medipal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".emergency.EmergencyContactDetailActivity"
+            android:label="@string/title_emergencycontact_detail"
+            android:parentActivityName=".emergency.EmergencyContactListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.ft08.medipal.emergency.EmergencyContactListActivity" />
+        </activity>
+        <activity
+            android:name=".help.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="sg.edu.nus.iss.ft08.medipal.MainActivity" />
+        </activity>
+        <activity
+            android:name=".measurement.MeasurementDetailBloodPressureActivity"
+            android:label="@string/title_activity_measure_bloodpressure_detail"
+            android:parentActivityName=".measurement.bloodpressureListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".measurement.MeasurementDetailPulseActivity"
+            android:label="@string/title_activity_measure_pulse_detail"
+            android:parentActivityName=".measurement.pulseListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".measurement.MeasurementDetailTemperatureActivity"
+            android:label="@string/title_activity_measure_temperature_detail"
+            android:parentActivityName=".measurement.temperatureListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".measurement.MeasurementDetailWeightActivity"
+            android:label="@string/title_activity_measure_weight_detail"
+            android:parentActivityName=".measurement.weightListActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver android:name=".reminder.ReminderSetter">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".reminder.ReminderReceiver" />
+
+        <service android:name=".reminder.ReminderService" />
+        <activity
+            android:name=".measurement.bloodpressureListActivity"
+            android:label="@string/title_activity_measure_temperature_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".measurement.temperatureListActivity"
+            android:label="@string/title_temperature_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".measurement.pulseListActivity"
+            android:label="@string/title_pulse_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".measurement.weightListActivity"
+            android:label="@string/title_weight_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

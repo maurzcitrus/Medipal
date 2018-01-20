@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:orientation="horizontal"
+    android:rowCount="3">
+
+    <TextView
+        android:id="@+id/healthbio_list_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_margin"
+        android:textSize="@dimen/list_item_big_label"
+        android:textAppearance="?attr/textAppearanceListItem" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="2"
+        android:layout_gravity="right|center"
+        android:layout_marginTop="10dp"
+        android:layout_row="0"
+        android:layout_rowSpan="2"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_marginTop="10dp"
+        android:layout_row="2"
+        android:background="@android:color/darker_gray">
+
+    </LinearLayout>
+
+</GridLayout>

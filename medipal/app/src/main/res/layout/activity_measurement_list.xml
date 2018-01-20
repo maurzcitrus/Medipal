@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="3">
+
+        <TextView
+            android:id="@+id/bloodpressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_row="0"
+            android:text="Blood Pressure"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+
+        <TextView
+            android:id="@+id/date_bp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="left|top"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_row="0"
+            android:text="date" />
+
+
+        <LinearLayout
+            android:layout_column="0"
+            android:layout_columnSpan="2"
+            android:layout_gravity="left"
+            android:layout_row="1"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Systolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="1"
+                android:text="Systolic" />
+
+            <TextView
+                android:id="@+id/Distolic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="1"
+                android:text="Distolic" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_column="1"
+            android:layout_columnSpan="2"
+            android:layout_gravity="left"
+            android:layout_row="1"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/systolic_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="1"
+                android:text="some value" />
+
+            <TextView
+                android:id="@+id/diastolic_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="left|top"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_row="1"
+                android:text="some value" />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_bloodpressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="right|center"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_marginTop="10dp"
+            android:layout_row="2"
+            android:background="@android:color/darker_gray">
+
+        </LinearLayout>
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="3">
+
+        <TextView
+            android:id="@+id/temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_row="0"
+            android:text="Temperature"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/date_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="left|top"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_row="0"
+            android:text="date" />
+
+        <TextView
+            android:id="@+id/temperature_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_row="1"
+            android:text="some value" />
+
+        <ImageButton
+            android:id="@+id/btn_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="right|center"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_marginTop="10dp"
+            android:layout_row="2"
+            android:background="@android:color/darker_gray">
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="3">
+
+        <TextView
+            android:id="@+id/pulse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pulse"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_row="0"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/date_pulse"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="date"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:layout_gravity="left|top"
+            android:layout_margin="@dimen/text_margin" />
+
+        <TextView
+            android:id="@+id/pulse_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_gravity="left|top"
+            android:layout_margin="@dimen/text_margin"
+            android:text="some value"/>
+
+        <ImageButton
+            android:id="@+id/btn_pulse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="right|center"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_marginTop="10dp"
+            android:layout_row="2"
+            android:background="@android:color/darker_gray">
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:rowCount="3">
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_margin="@dimen/text_margin"
+            android:layout_row="0"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/date_weight"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="date"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:layout_gravity="left|top"
+            android:layout_margin="@dimen/text_margin" />
+
+        <TextView
+            android:id="@+id/weight_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_gravity="left|top"
+            android:layout_margin="@dimen/text_margin"
+            android:text="some value"/>
+
+        <ImageButton
+            android:id="@+id/btn_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_gravity="right|center"
+            android:layout_marginTop="10dp"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_chevron_right_black_24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_marginTop="10dp"
+            android:layout_row="2"
+            android:background="@android:color/darker_gray">
+
+        </LinearLayout>
+
+    </GridLayout>
+
+</LinearLayout>

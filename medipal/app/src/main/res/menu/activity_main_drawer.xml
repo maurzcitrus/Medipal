@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_personal_bio"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Personal Bio" />
+
+        <item
+            android:id="@+id/nav_health_bio"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="Health Bio" />
+
+        <item
+            android:id="@+id/nav_medicine_category"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Medicine Category" />
+
+    </group>
+
+</menu>
